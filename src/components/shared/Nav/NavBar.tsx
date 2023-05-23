@@ -1,6 +1,5 @@
 /* global VoidFunction */
 import { ReactNode, useState } from 'react';
-import { AuthStatus } from '~/components/auth/AuthProvider';
 import Logo from '~/components/shared/Logo/Logo';
 import NavItem from '~/components/shared/Nav/NavItem';
 
@@ -25,14 +24,6 @@ function PrimaryNavbar() {
         <Logo />
       </NavItem>
       <div className="hidden md:flex items-center space-x-1">{navItems()}</div>
-    </div>
-  );
-}
-
-function SecondaryNavbar() {
-  return (
-    <div className="hidden md:flex items-center space-x-3">
-      <AuthStatus />
     </div>
   );
 }
@@ -97,7 +88,6 @@ export default function NavBar() {
   return (
     <NavContainer isMenuOpen={isMenuOpen}>
       <PrimaryNavbar />
-      <SecondaryNavbar />
       <MobileMenuButton onClick={() => setIsMenuOpen(!isMenuOpen)} />
     </NavContainer>
   );

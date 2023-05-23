@@ -1,12 +1,9 @@
 import { lazy, Suspense } from 'react';
 import { BrowserRouter, Outlet, RouteObject, useRoutes } from 'react-router-dom';
-import { RequireAuth } from '~/components/auth/AuthProvider';
 import NavBar from '~/components/shared/Nav/NavBar';
 import Loading from '~/components/shared/Loading';
 
 const HomeScreen = lazy(() => import('~/components/screens/Home'));
-const ProtectedScreen = lazy(() => import('~/components/screens/Protected'));
-const LoginScreen = lazy(() => import('~/components/screens/Login'));
 const NotFoundScreen = lazy(() => import('~/components/screens/NotFound'));
 
 function Layout() {
@@ -27,18 +24,6 @@ function Routes() {
         {
           index: true,
           element: <HomeScreen />,
-        },
-        {
-          path: '/protected',
-          element: (
-            <RequireAuth>
-              <ProtectedScreen />
-            </RequireAuth>
-          ),
-        },
-        {
-          path: '/login',
-          element: <LoginScreen />,
         },
         {
           path: '*',
