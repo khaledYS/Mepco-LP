@@ -72,8 +72,8 @@ type NavContainerProps = {
 
 function NavContainer({ children, isMenuOpen }: NavContainerProps) {
   return (
-    <nav className="shadow-lg">
-      <div className="max-w-6xl mx-auto px-4">
+    <nav className="shadow-lg bg-[#F8F8F8]">
+      <div className="mx-auto px-4">
         <div className="flex justify-between">{children}</div>
       </div>
 
