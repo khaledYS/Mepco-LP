@@ -3,7 +3,7 @@ import { BrowserRouter, Outlet, RouteObject, useRoutes } from 'react-router-dom'
 import NavBar from '~/components/shared/Nav/NavBar';
 import Loading from '~/components/shared/Loading';
 
-const HomeScreen = lazy(() => import('~/components/screens/Home'));
+const HomeScreen = lazy(() => import('~/components/screens/Home/Home'));
 const NotFoundScreen = lazy(() => import('~/components/screens/NotFound'));
 
 function Layout() {
