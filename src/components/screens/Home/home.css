@@ -8,3 +8,7 @@
 .tajwal-font{
   font-family: 'Tajawal', sans-serif;
 }
+.waves{
+  cursor: pointer;
+  border-color: rgba(245, 222, 179, 0);
+}

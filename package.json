@@ -13,11 +13,15 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|tsx|json)\""
   },
   "dependencies": {
+    "@react-spring/parallax": "^9.7.2",
     "daisyui": "^2.14.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-helmet-async": "^1.3.0",
-    "react-router-dom": "6.3.0"
+    "react-icons": "^4.8.0",
+    "react-router-dom": "6.3.0",
+    "react-spring": "^9.7.1",
+    "react-tilt": "^1.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
