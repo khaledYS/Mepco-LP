@@ -14,12 +14,12 @@ const ScrollDownBtn: FunctionComponent<ScrollDownBtnProps> = ({children, ...rest
   const [isMouseOn, setIsMouseOn] = useState<boolean>(false);
   const props = useSpring({
     from: {
-      borderColor:"rgba(245, 222, 179, 0)",
-      borderWidth: "4px"
+      outlineColor:"rgba(245, 222, 179, 0)",
+      outlineWidth: "4px"
     },
     to:{
-      borderColor: "rgba(245, 222, 179, 1)",
-      borderWidth: "6px"
+      outlineColor: "rgba(245, 222, 179, 1)",
+      outlineWidth: "6px"
     },
     config: {
       duration: 800,
@@ -31,12 +31,12 @@ const ScrollDownBtn: FunctionComponent<ScrollDownBtnProps> = ({children, ...rest
   });
   const _props = useSpring({
     from: {
-      borderColor:"rgba(245, 222, 179, 0)",
-      borderWidth: "4px"
+      outlineColor:"rgba(245, 222, 179, 0)",
+      outlineWidth: "4px"
     },
     to:{
-      borderColor: "rgba(245, 222, 179, 1)",
-      borderWidth: "6px"
+      outlineColor: "rgba(245, 222, 179, 1)",
+      outlineWidth: "6px"
     },
     config: {
       duration: 800,
@@ -56,8 +56,8 @@ const ScrollDownBtn: FunctionComponent<ScrollDownBtnProps> = ({children, ...rest
   })
   return (
     <div className={rest.className}>
-      <animated.a href="#CompanyPillars" onMouseEnter={()=>{setIsMouseOn(true)}} onMouseLeave={()=>{setIsMouseOn(false)}} style={_props} className="waves block p-1 w-min bg-transparent rounded-full border-4">
-         <animated.div style={props} className="waves p-1 bg-transparent rounded-full border-4">
+      <animated.a href="#CompanyPillars" onMouseEnter={()=>{setIsMouseOn(true)}} onMouseLeave={()=>{setIsMouseOn(false)}} style={_props} className="waves block p-1 w-min bg-transparent rounded-full outline-4">
+         <animated.div style={props} className="waves p-1 bg-transparent rounded-full outline-4">
           <animated.div style={onBtnHoverProps}>
             <BsArrowDownShort style={{boxShadow: "0 0 12px -5px #333333"}} className="text-5xl shadow-2xl bg-[#F5DEB3] text-[#333333] rounded-full" />
           </animated.div>

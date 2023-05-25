@@ -10,5 +10,6 @@
 }
 .waves{
   cursor: pointer;
-  border-color: rgba(245, 222, 179, 0);
+  outline-color: rgba(245, 222, 179, 0);
+  outline-style: solid;
 }
