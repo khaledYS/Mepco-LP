@@ -3,6 +3,7 @@ import { Tilt } from 'react-tilt';
 import { BsArrowDown, BsArrowDownCircle, BsArrowDownCircleFill, BsArrowDownShort } from 'react-icons/bs';
 import { animated, easings, useSpring } from 'react-spring';
 import ScrollDownBtn from './components/ScrollDownBtn';
+
 interface IntroSectionsProps {}
 
 
