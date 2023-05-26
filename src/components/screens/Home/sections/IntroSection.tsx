@@ -21,7 +21,7 @@ const IntroSections: FunctionComponent<IntroSectionsProps> = () => {
   };
 
   return (
-    <div className="Intro-section w-full h-full flex justify-start items-center relative">
+    <div className="Intro-section w-full h-full flex justify-start items-center relative" style={{boxShadow: "#f5deb3 0 16px 15px 0px"}}>
       <Tilt options={defaultOptions}>
         <h1
           className={`rounded-xl py-4 px-5 pt-6 text-7xl font-extrabold tajwal-font text-center text-[#fff3ef] ml-9 cursor-pointer `}
