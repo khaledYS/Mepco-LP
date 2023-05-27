@@ -28,7 +28,7 @@ const CompanyPillars: FunctionComponent<CompanyPillarsProps> = () => {
             );
           })}
         </div>
-        <div className='pt-6'>
+        <div className='pt-6 overflow-hidden'>
            {currentPillar && <CurrentPillarPrev key={currentPillar.text} currentPillar={currentPillar!} />}
         </div>
       </div>
