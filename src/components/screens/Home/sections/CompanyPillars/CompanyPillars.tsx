@@ -22,8 +22,8 @@ const CompanyPillars: FunctionComponent<CompanyPillarsProps> = () => {
         <div className="flex w-full justify-center flex-wrap">
           {pillarsArray.map((pillar, ind) => {
             return (
-              <div key={ind} className="py-3 px-6 max-sm:px-2 max-sm:py-2" onClick={()=>setCurrentPillar(pillar)}>
-                <PillarImagePrev pillar={pillar} />
+              <div key={ind} className="py-3 px-6 max-sm:px-2 max-sm:py-2 max-md:px-3">
+                <PillarImagePrev pillar={pillar} onClick={()=>setCurrentPillar(pillar)}/>
               </div>
             );
           })}
