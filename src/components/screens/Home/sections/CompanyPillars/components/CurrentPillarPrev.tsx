@@ -17,7 +17,7 @@ const CurrentPillarPrev: FunctionComponent<CurrentPillarPrevProps> = ({currentPi
     leave: {y:-50, opacity: 0 }
   })
   return transitions((style, items, _, ind)=>
-    <a.div ref={!ind ? ref : null} style={style} key={currentPillar.text} className={`tajwal-font overflow-hidden text-right  ${!ind ? " lg:text-center font-extrabold text-5xl px-6 max-sm:px-2 text-[#475B5A] mb-4" : "max-sm:px-6 text-lg lg:w-4/6 lg:mx-auto lg:text-center font-medium px-10"}`}>
+    <a.div ref={!ind ? ref : null} style={style} key={currentPillar.text} className={`tajwal-font text-right  ${!ind ? " lg:text-center font-extrabold text-5xl px-6 max-sm:px-2 text-[#475B5A] mb-4" : "max-sm:px-6 text-lg lg:w-4/6 lg:mx-auto lg:text-center font-medium px-10"}`}>
       {items}
     </a.div>
   );
