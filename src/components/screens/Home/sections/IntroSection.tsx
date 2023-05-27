@@ -21,14 +21,14 @@ const IntroSections: FunctionComponent<IntroSectionsProps> = () => {
   };
 
   return (
-    <div className="Intro-section w-full h-full flex justify-start items-center relative" style={{boxShadow: "#f5deb3 0 16px 15px 0px"}}>
+    <div className="Intro-section w-full h-full flex justify-start max-md:justify-center items-center relative text-right" style={{boxShadow: "#f5deb3 0 16px 15px 0px"}}>
       <Tilt options={defaultOptions}>
         <h1
-          className={`rounded-xl py-4 px-5 pt-6 text-7xl font-extrabold tajwal-font text-center text-[#fff3ef] ml-9 cursor-pointer `}
+          className={`rounded-xl py-4 px-5 pt-6 max-md:!p-0 text-7xl font-extrabold tajwal-font text-center text-[#fff3ef] ml-9 max-sm:!m-0 cursor-pointer max-sm:text-5xl `}
         >
           مرحباً بكم في <br />
-          <span className="tajwal-font text-[#333] text-center font-extrabold text-9xl">MEP</span>
-          <span className="text-[#ab822a] tajwal-font text-center font-extrabold text-9xl">CO</span>
+          <span className="tajwal-font text-[#333] text-center font-extrabold text-9xl max-sm:text-7xl">MEP</span>
+          <span className="text-[#ab822a] tajwal-font text-center font-extrabold text-9xl max-sm:text-7xl">CO</span>
         </h1>
       </Tilt>
       <ScrollDownBtn className="absolute bottom-0 grid place-items-center pb-6 w-full" />

@@ -6,7 +6,7 @@ import CompanyPillars from './sections/CompanyPillars/CompanyPillars';
 
 export default function HomeScreen() {
   return (
-    <div className='h-full w-full overflow-auto scroll-smooth'>
+    <div className='h-full w-full overflow-auto overflow-x-hidden scroll-smooth'>
       <Head title="Home" />
       <IntroSections />
       <CompanyPillars />
