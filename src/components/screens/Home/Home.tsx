@@ -3,6 +3,7 @@ import IntroSections from './sections/IntroSection';
 import "./home.css";
 import {Parallax, ParallaxLayer} from "@react-spring/parallax"
 import CompanyPillars from './sections/CompanyPillars/CompanyPillars';
+import OurCompanies from './sections/OurCompanies/OurCompanies';
 
 export default function HomeScreen() {
   return (
@@ -10,6 +11,7 @@ export default function HomeScreen() {
       <Head title="Home" />
       <IntroSections />
       <CompanyPillars />
+      <OurCompanies />
     </div>
   );
 }
