@@ -13,3 +13,11 @@
   outline-color: rgba(245, 222, 179, 0);
   outline-style: solid;
 }
+
+.parallax-remove-scrollbar::-webkit-scrollbar {
+	width: 0 !important;
+}
+.parallax-remove-scrollbar{
+  overflow: -moz-scrollbars-none !important;
+  -ms-overflow-style: none !important;
+}
