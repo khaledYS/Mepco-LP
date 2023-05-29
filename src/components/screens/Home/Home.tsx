@@ -7,7 +7,7 @@ import OurCompanies from './sections/OurCompanies/OurCompanies';
 
 export default function HomeScreen() {
   return (
-    <div className='h-full w-full overflow-auto overflow-x-hidden scroll-smooth'>
+    <div className='h-full w-full overflow-auto overflow-x-hidden scroll-smooth' style={{scrollSnapType:"y mandatory"}}>
       <Head title="Home" />
       <IntroSections />
       <CompanyPillars />
