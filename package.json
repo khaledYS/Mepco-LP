@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "vite",
     "dev:tailwind": "npx tailwindcss@3.2.4 -i ./src/index.css -o ./src/output.css",
-    "build": "tsc && vite build",
+    "build": "npm run build:tailwind && tsc && vite build",
     "build:tailwind": "npx tailwindcss@3.2.4 -i ./src/index.css -o ./src/output.css --watch",
     "preview": "vite preview",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts,.tsx .",
