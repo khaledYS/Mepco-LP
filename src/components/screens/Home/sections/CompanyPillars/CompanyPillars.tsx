@@ -2,8 +2,6 @@ import { FunctionComponent, useEffect, useState} from 'react';
 import { pillarsArray, pillarType } from './components/pillarsData';
 import PillarImagePrev from './components/PillarImagePrev';
 import CurrentPillarPrev from './components/CurrentPillarPrev';
-import { animated as a } from 'react-spring';
-import { useTransition } from 'react-spring';
 
 interface CompanyPillarsProps {}
 
@@ -23,12 +21,12 @@ const CompanyPillars: FunctionComponent<CompanyPillarsProps> = () => {
           {pillarsArray.map((pillar, ind) => {
             return (
               <div key={ind} className="py-3 px-6 max-sm:px-2 max-sm:py-2 max-md:px-3">
-                <PillarImagePrev pillar={pillar} onClick={()=>setCurrentPillar(pillar)}/>
+                <PillarImagePrev pillar={pillar} onClick={()=>setCurrentPillar(pillar)} />
               </div>
             );
           })}
         </div>
-        <div className='pt-6 overflow-hidden'>
+        <div className="pt-6 overflow-hidden">
            {currentPillar && <CurrentPillarPrev key={currentPillar.text} currentPillar={currentPillar!} />}
         </div>
       </div>

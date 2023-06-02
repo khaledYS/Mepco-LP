@@ -1,14 +1,12 @@
-import { FunctionComponent, useEffect } from "react";
-import { useTransition, animated as a, easings } from "react-spring";
+import { FunctionComponent } from "react";
+import { useTransition, animated as a } from "react-spring";
 import { pillarType } from "./pillarsData";
-import useMeasure from 'react-use-measure'
 
 interface CurrentPillarPrevProps {
   currentPillar: pillarType
 }
  
 const CurrentPillarPrev: FunctionComponent<CurrentPillarPrevProps> = ({currentPillar}) => {
-  const [ref, {height}] = useMeasure();
   const transitions = useTransition([currentPillar.caption, currentPillar.text], {
     from: {y:50, opacity: 0},
     enter: (item, ind) => async (next) => {
@@ -18,7 +16,7 @@ const CurrentPillarPrev: FunctionComponent<CurrentPillarPrevProps> = ({currentPi
   })
   return transitions((style, items, _, ind)=>
   <div className="overflow-y-hidden">
-      <a.div ref={!ind ? ref : null} style={style} key={currentPillar.text} className={`tajwal-font text-right  ${!ind ? " lg:text-center font-extrabold text-5xl px-6 max-sm:px-2 text-[#475B5A] mb-4" : "max-sm:px-6 text-lg lg:w-4/6 lg:mx-auto lg:text-center font-medium px-10"}`}>
+      <a.div style={style} key={currentPillar.text} className={`tajwal-font text-right  ${!ind ? " lg:text-center font-extrabold text-5xl px-6 max-sm:px-2 text-[#475B5A] mb-4" : "max-sm:px-6 text-lg lg:w-4/6 lg:mx-auto lg:text-center font-medium px-10"}`}>
         {items}
       </a.div>
   </div>
