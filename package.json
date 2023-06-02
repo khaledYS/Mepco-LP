@@ -7,7 +7,9 @@
   "repository": "https://github.com/ramniel/react-ts-vite-tailwind-template",
   "scripts": {
     "dev": "vite",
+    "dev:tailwind": "npx tailwindcss@3.2.4 -i ./src/index.css -o ./src/output.css",
     "build": "tsc && vite build",
+    "build:tailwind": "npx tailwindcss@3.2.4 -i ./src/index.css -o ./src/output.css --watch",
     "preview": "vite preview",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts,.tsx .",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|tsx|json)\""
@@ -43,7 +45,7 @@
     "eslint-plugin-react": "^7.29.4",
     "postcss": "^8.4.12",
     "prettier": "^2.6.2",
-    "tailwindcss": "^3.0.24",
+    "tailwindcss": "^3.2.4",
     "typescript": "^4.6.3",
     "vite": "^2.9.13",
     "vite-tsconfig-paths": "^3.4.1"
