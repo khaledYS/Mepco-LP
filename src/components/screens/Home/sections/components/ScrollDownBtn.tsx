@@ -1,6 +1,6 @@
-import { FunctionComponent, useState, HTMLAttributes } from 'react';
+import { FunctionComponent, useState} from 'react';
 import { BsArrowDownShort } from 'react-icons/bs';
-import {animated, config, easings, useSpring} from "react-spring"
+import {animated, easings, useSpring} from "react-spring"
 import ChildrenProp from '~/components/types/Children';
 
 interface ScrollDownBtnProps {
