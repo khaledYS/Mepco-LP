@@ -6,11 +6,8 @@ import CurrentPillarPrev from './components/CurrentPillarPrev';
 interface CompanyPillarsProps {}
 
 const CompanyPillars: FunctionComponent<CompanyPillarsProps> = () => {
-  const [currentPillar, setCurrentPillar] = useState<pillarType>();
+  const [currentPillarInd, setCurrentPillarInd] = useState<number>(1);
   
-  useEffect(() => {
-    setCurrentPillar(pillarsArray[0])  
-  }, []);
   return (
     <div className="w-full min-h-full snap-start" id="CompanyPillars">
       <div className="pb-6 pt-16 grid place-items-center">
@@ -21,13 +18,13 @@ const CompanyPillars: FunctionComponent<CompanyPillarsProps> = () => {
           {pillarsArray.map((pillar, ind) => {
             return (
               <div key={ind} className="py-3 px-6 max-sm:px-2 max-sm:py-2 max-md:px-3">
-                <PillarImagePrev pillar={pillar} onClick={()=>setCurrentPillar(pillar)} />
+                <PillarImagePrev pillar={pillar} isCurrent={currentPillarInd === ind} onClick={()=>setCurrentPillarInd(ind)} />
               </div>
             );
           })}
         </div>
         <div className="pt-6 overflow-hidden">
-           {currentPillar && <CurrentPillarPrev key={currentPillar.text} currentPillar={currentPillar!} />}
+          <CurrentPillarPrev key={currentPillarInd} currentPillar={pillarsArray[currentPillarInd]} />
         </div>
       </div>
     </div>
