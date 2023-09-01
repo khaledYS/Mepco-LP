@@ -13,8 +13,8 @@ const PillarImagePrev: FunctionComponent<PillarImagePrevProps> = ({ pillar, isCu
     <Tilt >
       <div
         onClick={onClick}
-        className={`flex cursor-pointer flex-col rounded-2xl justify-center items-center tajwal-font text-xl font-semibold pb-4 relative px-4 max-sm:!p-0 max-md:max-w-[10rem] transition-all duration-100 outline outline-[#333] ${isCurrent ? "outline-4": "outline-0"}`}
-        style={{ boxShadow: '#333333 0px 0px 37px -23px' }}
+        className={`flex cursor-pointer flex-col rounded-3xl\ justify-center items-center tajwal-font text-xl font-semibold pb-4 relative px-4 max-sm:!p-0 max-md:max-w-[10rem] transition-all duration-100 border border-black border-2`}
+        style={{ boxShadow: '#333 0px 0px 37px -23px', }}
       >
         <img src={pillar.image} alt={pillar.caption} className="max-sm:w-20 max-md:w-28" />
         <h1 className="text-center max-sm:hidden">{pillar.caption} </h1>

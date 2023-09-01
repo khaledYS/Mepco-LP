@@ -16,7 +16,8 @@ const CurrentPillarPrev: FunctionComponent<CurrentPillarPrevProps> = ({currentPi
   })
   return transitions((style, items, _, ind)=>
   <div className="overflow-y-hidden">
-      <a.div style={style} key={currentPillar.text} className={`tajwal-font text-right  ${!ind ? " lg:text-center font-extrabold text-5xl px-6 max-sm:px-2 text-[#475B5A] mb-4" : "max-sm:px-6 text-lg lg:w-4/6 lg:mx-auto lg:text-center font-medium px-10"}`}>
+    {/* The If-statement is to define different styles for the caption and the title  */}
+      <a.div style={style} key={currentPillar.text} className={`tajwal-font text-right  ${!ind ? " lg:text-center font-extrabold text-5xl px-6 pt-2 max-sm:px-2 text-[#475B5A] mb-4" : "max-sm:px-6 text-lg lg:w-4/6 lg:mx-auto lg:text-center font-medium px-10"}`}>
         {items}
       </a.div>
   </div>

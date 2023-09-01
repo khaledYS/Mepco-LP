@@ -1,4 +1,4 @@
-/* global VoidFunction */
+              /* global VoidFunction */
 import { ReactNode, useState } from 'react';
 import Logo from '~/components/shared/Logo/Logo';
 import NavItem from '~/components/shared/Nav/NavItem';

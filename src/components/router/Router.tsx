@@ -9,7 +9,7 @@ const NotFoundScreen = lazy(() => import('~/components/screens/NotFound'));
 function Layout() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <Outlet />
     </>
   );

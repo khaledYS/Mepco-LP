@@ -56,13 +56,15 @@ const ScrollDownBtn: FunctionComponent<ScrollDownBtnProps> = ({children, ...rest
   })
   return (
     <div className={rest.className}>
-      <animated.a href="#CompanyPillars" onMouseEnter={()=>{setIsMouseOn(true)}} onMouseLeave={()=>{setIsMouseOn(false)}} style={_props} className="waves block p-1 w-min bg-transparent rounded-full outline-4">
-         <animated.div style={props} className="waves p-1 bg-transparent rounded-full outline-4">
-          <animated.div style={onBtnHoverProps}>
-            <BsArrowDownShort style={{boxShadow: "0 0 12px -5px #333333"}} className="text-5xl shadow-2xl bg-[#F5DEB3] text-[#333333] rounded-full" />
+      <div className='rounded-full overflow-hidden'>
+        <animated.a href="#CompanyPillars" onMouseEnter={()=>{setIsMouseOn(true)}} onMouseLeave={()=>{setIsMouseOn(false)}} style={_props} className="waves block p-1 w-min bg-transparent outline-4">
+          <animated.div style={props} className="waves p-1 bg-transparent rounded-full outline-4">
+            <animated.div style={onBtnHoverProps}>
+              <BsArrowDownShort style={{boxShadow: "0 0 12px -5px #333333"}} className="text-5xl shadow-2xl bg-[#F5DEB3] text-[#333333] rounded-full" />
+            </animated.div>
           </animated.div>
-         </animated.div>
-      </animated.a>
+        </animated.a>
+      </div>
     </div>
   );
 };
